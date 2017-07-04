@@ -15,11 +15,15 @@ services:
   app:
     container_name: laravel-app
     image: shomatan/laravel:5.4-php-7.1
+    environment:
+      LARAVEL_DB_HOST: db
+    volumes:
+      - ./src:/var/www/html
     restart: always
 
   db:
     container_name: laravel-db
-    image: mariadb:10.1.22
+    image: mariadb:10.3.0
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
       MYSQL_USER:     laravel
