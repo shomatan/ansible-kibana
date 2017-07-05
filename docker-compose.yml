@@ -18,7 +18,7 @@ services:
     environment:
       LARAVEL_DB_HOST: db
     volumes:
-      - ./src:/var/www/html
+      - ./laravel:/var/www/html
     restart: always
 
   db:
@@ -29,6 +29,8 @@ services:
       MYSQL_USER:     laravel
       MYSQL_PASSWORD: laravel
       MYSQL_DATABASE: laravel
+    ports:
+      - 3306:3306
     volumes:
       - /var/lib/mysql
     restart: always
