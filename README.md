@@ -28,8 +28,10 @@ And development source code at `laravel` directory.
 
 |Laravel|PHP-FPM|
 |-------|-------|
-|5.4|7.1|
-|5.1|7.1|
+| 5.4   | 7.1   |
+| 5.3   | 7.1   |
+| 5.2   | 7.1   |
+| 5.1   | 7.1   |
 
 Edit `docker-compose.yml`.  
  
